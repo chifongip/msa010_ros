@@ -3,7 +3,7 @@
 		args="0.17 0.12 0.355 0.7010574 -0.092296 0.4777144 0.5213338 base_link dep_cam_left_link 100" /> -->
 
 	<node pkg="tf" type="static_transform_publisher" name="dep_cam_left_link_to_base_link" 
-		args="0.175 0.04 0.38 -0.701 -0.478 -0.092 0.521 base_link dep_cam_left_link 100" />
+		args="0.2 0.04 0.345 -0.701 -0.478 -0.092 0.521 base_link dep_cam_left_link 100" />
 
 	<!-- <node pkg="tf" type="static_transform_publisher" name="dep_cam_left_link_to_base_link" 
 		args="0.17 -0.115 0.385 0 0 0.3007058 0.953717 base_link dep_cam_left_link 100" />
@@ -21,7 +21,7 @@
 		args="0.17 -0.12 0.355 0.5213338 -0.4777144 0.092296 0.7010574 base_link dep_cam_right_link 100" /> -->
 
 	<node pkg="tf" type="static_transform_publisher" name="dep_cam_right_link_to_base_link" 
-		args="0.175 -0.04 0.38 0.701 -0.478 0.092 0.521 base_link dep_cam_right_link 100" />
+		args="0.2 -0.04 0.345 0.701 -0.478 0.092 0.521 base_link dep_cam_right_link 100" />
 
 	<!-- <node pkg="tf" type="static_transform_publisher" name="dep_cam_right_link_to_base_link" 
 		args="0.17 -0.115 0.385 0 0 -0.3007058 0.953717 base_link dep_cam_right_link 100" />
@@ -33,7 +33,7 @@
 		args="0 0 0 0.7071068 0 0 0.7071068 dep_cam_right_linkxxx dep_cam_right_linkxxxaaa 100" /> -->
 
 	<node pkg="tf" type="static_transform_publisher" name="dep_cam_laser_link_to_base_link" 
-		args="0 0 0.38 0 0 0 1 base_link dep_cam_laser_link 100" />
+		args="0 0 0.345 0 0 0 1 base_link dep_cam_laser_link 100" />
 	
 	<!-- <node pkg="msa010_ros" type="laser_scan_filter_node" name="laser_scan_filter_node" output="screen">
 		<param name="scan_input" value="scan" />
@@ -64,8 +64,8 @@
 	        <remap from="scan" to="depth/scan" />
 	        <param name="target_frame" value="dep_cam_laser_link" />
 	        <param name="transform_tolerance" value="0.01" />
-	        <param name="min_height" value="-0.38" />
-	        <param name="max_height" value="0.82" />
+	        <param name="min_height" value="-0.345" />
+	        <param name="max_height" value="0.855" />
 	        <param name="angle_min" value="0.0872665" />
 	        <param name="angle_max" value="1.13446401" />
 	        <param name="angle_increment" value="0.0244346095" />
@@ -99,8 +99,8 @@
 	        <remap from="scan" to="depth/scan" />
 	        <param name="target_frame" value="dep_cam_laser_link" />
 	        <param name="transform_tolerance" value="0.01" />
-	        <param name="min_height" value="-0.38" />
-	        <param name="max_height" value="0.82" />
+	        <param name="min_height" value="-0.345" />
+	        <param name="max_height" value="0.855" />
 	        <param name="angle_min" value="-1.13446401" />
 	        <param name="angle_max" value="-0.0872665" />
 	        <param name="angle_increment" value="0.0244346095" />
